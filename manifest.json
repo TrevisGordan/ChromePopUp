@@ -7,7 +7,10 @@
       "default_title": "Open the current Tab as a Popup-Window"
    },
  "description": "Opens the current Tab as a Popup-Window",
+ "permissions": [
+      "contextMenus"
+     ],
  "manifest_version": 2,
  "name": "Open-as-Popup",
- "version": "1.0.0.0"
+ "version": "1.0.0.1"
 }

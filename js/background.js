@@ -7,10 +7,12 @@ chrome.browserAction.onClicked.addListener( function(tab) {
 });
 
 
-function windowChange() {
-	chrome.windows.create({ tabId: 	tab.id,
-							type: 	"normal" });
+function windowChange(tab) {
+
+chrome.windows.getCurrent(type: "normal");
 }
+
+
 chrome.contextMenus.create({
   title: "Change Window",
   onclick: windowChange,

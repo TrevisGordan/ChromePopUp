@@ -8,8 +8,9 @@ chrome.browserAction.onClicked.addListener( function(tab) {
 
 
 function windowChange(tab) {
+	chrome.windows.update({
+							type: 	"normal" });
 
-chrome.windows.getCurrent(type: "normal");
 }
 
 
@@ -21,7 +22,7 @@ chrome.contextMenus.create({
 
 function getword(info,tab) {
   console.log("Word " + info.selectionText + " was clicked.");
-  chrome.tabs.create({
+  chrome.tabs.update({
     url: "http://www.google.com/search?q=" + info.selectionText,
   });
 }

@@ -6,13 +6,13 @@ chrome.browserAction.onClicked.addListener( function(tab) {
 
 });
 
-
+//NotWorking
 function windowChange(tab) {
 	chrome.windows.update({
 							type: 	"normal" });
 
 }
-
+//NotWorking//
 
 chrome.contextMenus.create({
   title: "Change Window",

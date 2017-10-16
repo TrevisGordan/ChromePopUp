@@ -7,6 +7,7 @@ chrome.browserAction.onClicked.addListener( function(tab) {
 });
 
 //NotWorking
+/*
 function windowChange(tab) {
 	chrome.windows.update({
 							type: 	"normal" });
@@ -18,7 +19,24 @@ chrome.contextMenus.create({
   title: "Change Window",
   onclick: windowChange,
 });
+*/
+//NotWorking//
+/*
+<protocol>//<hostname>:<port>/<pathname><search><hash>
 
+function windowChange(tab) {
+	var pageUrl = window.location.href;
+
+	chrome.tabs.create({
+    url: window.location.protocol +  });
+
+}
+
+chrome.contextMenus.create({
+  title: "Pop Window",
+  onclick: windowURl With Reload,
+});
+*/
 
 function getword(info,tab) {
   console.log("Word " + info.selectionText + " was clicked.");

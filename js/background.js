@@ -43,10 +43,10 @@ chrome.contextMenus.create({
 	contexts:["page"],
   onclick: clicky,
 });
-
+/*
 function getword(info,tab) {
   console.log("Word " + info.selectionText + " was clicked.");
-  chrome.tabs.update({
+  chrome.tabs.create({
     url: "http://www.google.com/search?q=" + info.selectionText,
   });
 }
@@ -55,3 +55,4 @@ chrome.contextMenus.create({
   contexts:["selection"],
   onclick: getword,
 });
+*/

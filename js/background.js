@@ -38,7 +38,11 @@ chrome.contextMenus.create({
 });
 */
 
-
+chrome.contextMenus.create({
+  title: "Pop Window",
+	contexts:["page"],
+  onclick: clicky,
+});
 
 function getword(info,tab) {
   console.log("Word " + info.selectionText + " was clicked.");
